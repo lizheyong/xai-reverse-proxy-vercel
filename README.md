@@ -4,7 +4,7 @@
 
 ## 一键部署
 
-<a href="https://vercel.com/new/clone?repository-url=https://github.com/lizheyong/xai-reverse-proxy&project-name=xai-reverse-proxy&repository-name=xai-reverse-proxy&demo-title=xAI%20API%20Proxy&demo-description=Simple%20reverse%20proxy%20for%20xAI%20API" rel="noopener" target="_blank" style="cursor: pointer;">
+<a href="https://vercel.com/new/clone?repository-url=https://github.com/lizheyong/xai-reverse-proxy&project-name=xai-reverse-proxy&repository-name=xai-reverse-proxy-vercel&demo-title=xAI%20API%20Proxy&demo-description=Simple%20reverse%20proxy%20for%20xAI%20API" rel="noopener" target="_blank" style="cursor: pointer;">
   <img src="https://vercel.com/button" alt="Deploy with Vercel"/>
 </a>
 
