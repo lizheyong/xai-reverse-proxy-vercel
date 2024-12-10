@@ -4,7 +4,7 @@
 
 ## 一键部署
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/你的用户名/xai-reverse-proxy)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/lizheyong/xai-reverse-proxy)
 
 ## 部署步骤
 
@@ -19,14 +19,14 @@
 - `PROJECT_NAME`: 你的项目名称
 
 ### 3. 绑定自定义域名
-1. 在 Vercel 控制台进入你的项目
-2. 点击 "Settings" -> "Domains"
-3. 添加你的自定义域名，如 `xai-api.example.com`
-4. 在你的域名服务商添加以下 DNS 记录：
+- 在 Vercel 控制台进入你的项目
+- 点击 "Settings" -> "Domains"
+- 添加你的自定义域名，如 `xai-api.example.com`
+- 在你的域名服务商添加以下 DNS 记录：
 	类型: CNAME
 	主机记录: xai-api（根据你的需求设置）
 	记录值: cname.vercel-dns.com
-5. 等待 DNS 解析生效（通常需要几分钟到几小时）
+- 等待 DNS 解析生效（通常需要几分钟到几小时）
 
 ### 4. 使用示例
 
@@ -41,38 +41,49 @@ curl https://你的域名/v1/chat/completions \
 ```
 
 ## 项目结构
-.
+```
 ├── README.md
 ├── index.js
 ├── node_modules
 ├── package-lock.json
 ├── package.json
 └── vercel.json
+```
 
 ## 本地开发
 ### 安装依赖
+```
 npm install
-
+```
 ### 本地运行
+```
 npm start
-
+```
 ### 部署到 Vercel
+```
 vercel deploy --prod
-
+```
 ## 注意事项
 ### 为什么需要自定义域名？
 避免 API 请求被墙
+
 更好的可访问性
+
 便于管理多个部署
+
 ### DNS 解析注意事项
 建议使用 CNAME 记录
+
 如果使用 Cloudflare，建议开启 Proxy 状态
+
 确保 SSL/TLS 加密已启用
 
 ## 常见问题
 Q: 如何更新部署？
+
 A: 直接推送代码到 GitHub，Vercel 会自动重新部署
 
 Q: 如何查看运行日志？
+
 A: 在 Vercel 控制台的 "Deployments" 页面查看
 
